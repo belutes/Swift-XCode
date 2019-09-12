@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-dg-FVz">
+                                <rect key="frame" x="0.0" y="0.0" width="736.00000000000045" height="414"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ipn-Kz-eO3">
+                                <rect key="frame" x="0.0" y="289.66666666666669" width="736" height="124.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City by the Sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH1-R1-g4k">
+                                        <rect key="frame" x="20" y="20" width="696" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is such a beautiful place!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-iY-f3l">
+                                        <rect key="frame" x="20" y="59.000000000000007" width="696" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80479753521126762" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cH1-R1-g4k" firstAttribute="leading" secondItem="Ipn-Kz-eO3" secondAttribute="leading" constant="20" id="2Qw-aj-t1m"/>
+                                    <constraint firstItem="AMa-iY-f3l" firstAttribute="top" secondItem="cH1-R1-g4k" secondAttribute="bottom" constant="10" id="9Gi-UA-H3g"/>
+                                    <constraint firstAttribute="trailing" secondItem="cH1-R1-g4k" secondAttribute="trailing" constant="20" id="I6K-oi-Pqy"/>
+                                    <constraint firstItem="cH1-R1-g4k" firstAttribute="top" secondItem="Ipn-Kz-eO3" secondAttribute="top" constant="20" id="aU1-qZ-OcJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="AMa-iY-f3l" secondAttribute="trailing" constant="20" id="qSm-5f-oas"/>
+                                    <constraint firstItem="AMa-iY-f3l" firstAttribute="leading" secondItem="Ipn-Kz-eO3" secondAttribute="leading" constant="20" id="zZs-6q-MMe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CxF-dg-FVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0gB-Uh-XJ6"/>
+                            <constraint firstItem="Ipn-Kz-eO3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="33i-Cs-waL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ipn-Kz-eO3" secondAttribute="trailing" constant="67" id="5WK-iR-z5w"/>
+                            <constraint firstItem="Ipn-Kz-eO3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="97w-JF-e5Q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ipn-Kz-eO3" secondAttribute="bottom" id="CYb-LP-jyR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CxF-dg-FVz" secondAttribute="bottom" id="IRS-N6-nyk"/>
+                            <constraint firstAttribute="trailing" secondItem="CxF-dg-FVz" secondAttribute="trailing" id="L0R-d3-Kfg"/>
+                            <constraint firstAttribute="trailing" secondItem="Ipn-Kz-eO3" secondAttribute="trailing" id="P8e-Od-tO0"/>
+                            <constraint firstItem="CxF-dg-FVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ae6-56-iQU"/>
+                            <constraint firstAttribute="bottom" secondItem="CxF-dg-FVz" secondAttribute="bottom" id="ejy-0s-J6y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CxF-dg-FVz" secondAttribute="trailing" id="i0w-j4-oQC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ipn-Kz-eO3" secondAttribute="trailing" id="mM4-Fb-B5Z"/>
+                            <constraint firstItem="CxF-dg-FVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="oqq-B1-ghB"/>
+                            <constraint firstItem="Ipn-Kz-eO3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p0c-gS-blX"/>
+                            <constraint firstItem="Ipn-Kz-eO3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="pzO-mg-sgX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ipn-Kz-eO3" secondAttribute="bottom" id="tmQ-FZ-7nq"/>
+                            <constraint firstItem="CxF-dg-FVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vWq-11-HbT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2005" height="1085"/>
+    </resources>
+</document>
