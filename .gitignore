@@ -349,3 +349,6 @@ xcuserdata/
 *.xcworkspace
 *.xcuserstate // <--- Here
 !default.xcworkspace
+
+# System Files
+.DS_Store
